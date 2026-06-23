@@ -1,0 +1,259 @@
+/* 全局变量二次元配色 */
+:root {
+    --main-purple: #82C4FF;
+    --light-blue: #AEC6CF;
+    --pink-accent: #FFD1DC;
+    --bg-cream: #FBF4FC;
+    --card-white: #ffffff;
+    --dark-text: #3A2E42;
+    --light-text: #705F80;
+    --shadow: rgba(200, 162, 200, 0.25);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+body {
+    /* 二次元渐变背景 */
+    background: linear-gradient(135deg, var(--bg-cream), #F0E7FB);
+    color: var(--dark-text);
+    line-height: 1.7;
+}
+
+/* 导航栏 梦幻紫 */
+nav {
+    background: linear-gradient(90deg, var(--main-purple), #D8B9D8);
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    box-shadow: 0 2px 8px var(--shadow);
+}
+
+.nav-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-a a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s;
+}
+
+.nav-a a:hover {
+    color: #fff;
+    text-shadow: 0 0 6px var(--pink-accent);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 首页头部 */
+.hero {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 10%;
+    object-fit: cover;
+    border: 4px solid var(--pink-accent);
+    box-shadow: 0 0 15px var(--shadow);
+    margin-bottom: 20px;
+    background-color: #FFD1DC;
+
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: var(--dark-text);
+}
+
+.hero p {
+    color: var(--light-text);
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 70px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--main-purple), var(--light-blue));
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    border-radius: 3px;
+}
+
+/* 关于我 */
+.about-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+    font-size: 17px;
+    text-align: center;
+    color: var(--light-text);
+}
+
+/* 技能卡片 圆角甜系 */
+.skill-wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.skill-card {
+    background: var(--card-white);
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 3px 12px var(--shadow);
+    transition: 0.3s;
+    border: 1px solid var(--pink-accent);
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px var(--shadow);
+    border-color: var(--main-purple);
+}
+
+.skill-card h3 {
+    margin-bottom: 12px;
+    color: var(--main-purple);
+}
+
+/* 项目卡片 */
+.project-wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: var(--card-white);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px var(--shadow);
+    border: 1px solid var(--light-blue);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--main-purple);
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    margin-bottom: 8px;
+    color: var(--dark-text);
+}
+
+.project-info p {
+    color: var(--light-text);
+}
+
+/* 联系板块 */
+.contact-box {
+    text-align: center;
+    background: var(--card-white);
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 3px 12px var(--shadow);
+    border: 1px solid var(--pink-accent);
+}
+
+.contact-box a {
+    display: inline-block;
+    margin: 10px 15px;
+    color: var(--main-purple);
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.contact-box a:hover {
+    color: #fff;
+    background: var(--main-purple);
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+/* 页脚渐变紫 */
+footer {
+    background: linear-gradient(90deg, var(--main-purple), #D8B9D8);
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 30px;
+}
+
+/* 手机适配 */
+@media(max-width:768px) {
+    .nav-box {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-a a {
+        margin: 0 10px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+}
