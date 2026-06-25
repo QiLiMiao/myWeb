@@ -24,7 +24,7 @@ body {
     line-height: 1.7;
 }
 
-/* 导航栏 梦幻紫 */
+/* 导航栏 */
 nav {
     background: linear-gradient(90deg, var(--main-purple), #D8B9D8);
     padding: 1rem 5%;
@@ -57,7 +57,7 @@ nav {
 }
 
 .nav-a a:hover {
-    color: #fff;
+    color: #89cdf7;
     text-shadow: 0 0 6px var(--pink-accent);
 }
 
